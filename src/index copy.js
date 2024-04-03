@@ -6,39 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import Hello from './Hello'
 import Library from './chapter_03/Library';
 import Clock from './Clock';
-import Welcome from './Welcome';
-import CommentList from './chapter_05/CommentList';
-import NotificationList from './chapter_06/NotificationList';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+setInterval(() => {
+  root.render(
   <React.StrictMode>
-     <CommentList/>
-     <NotificationList/>
-   </React.StrictMode>
- )
-
-
-// root.render(
-//  <React.StrictMode>
-//     <Welcome name="인제"/>
-//     <Welcome name="순신"/>
-//     <Welcome name="강찬"/>
-//   </React.StrictMode>
-// )
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// setInterval(() => {
-//   root.render(
-//   <React.StrictMode>
-//     <Clock/>
-//   </React.StrictMode>
-//   );
-// }, 1000)
+    <Clock/>
+  </React.StrictMode>
+  );
+}, 1000)
 
 //  App, Library.jsx 
-
 //  root.render(
 //    <React.StrictMode>
 //      <App />
